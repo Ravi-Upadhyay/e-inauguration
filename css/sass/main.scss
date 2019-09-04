@@ -82,18 +82,22 @@ body,html{
 
     //Page-2: Video Fireworks
     #page-video-fireworks {
-        display: none;
+        height: 100%;
 
+        overflow: hidden;
+        transition-property: all;
+        transition-duration: .5s;
+        transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
         // Containing the video
         video {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            min-height: 100%;
-            min-width: 100%;
-            height: auto;
-            width: auto;
+            // position: absolute;
+            // top: 50%;
+            // left: 50%;
+            // transform: translate(-50%, -50%);
+            // min-height: 100%;
+            // min-width: 100%;
+            // height: auto;
+            // width: auto;
         }
     }
     

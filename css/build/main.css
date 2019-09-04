@@ -59,17 +59,11 @@ body, html {
   transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
 }
 #main-container #page-video-fireworks {
-  display: none;
-}
-#main-container #page-video-fireworks video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-height: 100%;
-  min-width: 100%;
-  height: auto;
-  width: auto;
+  height: 100%;
+  overflow: hidden;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
 }
 #main-container #page-inaugration-complete {
   display: none;

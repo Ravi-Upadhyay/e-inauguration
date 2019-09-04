@@ -5,17 +5,18 @@ $(document).ready(function () {
         document.getElementById('page-video-fireworks'),
         document.getElementById('page-inaugration-complete')
     ]
+    let videoTag = document.getElementById('myVideo');
     let proceedWithVideoCalled = false;
 
-    let videoTag = document.getElementById('myVideo');
-    $('#myVideo').hide();
-    $('#finalImg').hide();
-    videoTag.addEventListener('ended', myHandler, false);
-    function myHandler(e) {
-        console.log('video completed');
-        $('#finalImg').show();
-        $('#finalImg').animate({ height: "100%" });
-    }
+    // let videoTag = document.getElementById('myVideo');
+    // $('#myVideo').hide();
+    // $('#finalImg').hide();
+    // videoTag.addEventListener('ended', myHandler, false);
+    // function myHandler(e) {
+    //     console.log('video completed');
+    //     $('#finalImg').show();
+    //     $('#finalImg').animate({ height: "100%" });
+    // }
 
     if ($("#main-container").css("zoom") === undefined) {
         $("#main-container").addClass("noZoom");
@@ -60,7 +61,7 @@ $(document).ready(function () {
             setTimeout(proceedWithVideo, 2000);
         }
     }
-
+    //First Change
     let proceedWithVideo = function() {
         if(!proceedWithVideoCalled) {
             console.log('Done');
@@ -68,5 +69,10 @@ $(document).ready(function () {
             $('#page-video-fireworks').removeClass('closenslide');
             $('#page-inaugration-complete').addClass('clclosenslideose');
         }
+    };
+
+    //Second Change
+    let proceedWithInaugration = function() {
+
     };
 });

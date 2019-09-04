@@ -31,6 +31,7 @@ https://davidwalsh.name/css-slide
 ## Features Pending
 - Restrict Orientation
 - Cutting and Making of Video
+- Making provision to go full screen
 
 ## Author
 
