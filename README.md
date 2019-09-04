@@ -16,6 +16,10 @@ to enable watcher for this project
 1. goto css folder (e-inaugurate/css)
 2. run this command on terminal (sass --watch sass:build)
 
+Animation Technique used
+
+https://davidwalsh.name/css-slide
+
 ## Features Done
 
 - Integrated Boiler Plate

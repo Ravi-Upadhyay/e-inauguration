@@ -5,6 +5,7 @@ $(document).ready(function () {
         document.getElementById('page-video-fireworks'),
         document.getElementById('page-inaugration-complete')
     ]
+    let proceedWithVideoCalled = false;
 
     let videoTag = document.getElementById('myVideo');
     $('#myVideo').hide();
@@ -61,7 +62,11 @@ $(document).ready(function () {
     }
 
     let proceedWithVideo = function() {
-        alert('Done');
-        pages[0].children().hide();
+        if(!proceedWithVideoCalled) {
+            console.log('Done');
+            $('#page-brands').addClass('closenslide');
+            $('#page-video-fireworks').removeClass('closenslide');
+            $('#page-inaugration-complete').addClass('clclosenslideose');
+        }
     };
 });

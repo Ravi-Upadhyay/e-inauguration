@@ -53,6 +53,10 @@ body, html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  overflow: hidden;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
 }
 #main-container #page-video-fireworks {
   display: none;
@@ -69,6 +73,10 @@ body, html {
 }
 #main-container #page-inaugration-complete {
   display: none;
+}
+
+.closenslide {
+  height: 0% !important;
 }
 
 .drag {
