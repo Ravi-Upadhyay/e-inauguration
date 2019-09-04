@@ -11,7 +11,7 @@ $(document).ready(function () {
     // let videoTag = document.getElementById('myVideo');
     // $('#myVideo').hide();
     // $('#finalImg').hide();
-    // videoTag.addEventListener('ended', myHandler, false);
+    // videoTag.addEventListener('ended', proceedWithInaugration, false);
     // function myHandler(e) {
     //     console.log('video completed');
     //     $('#finalImg').show();
@@ -67,13 +67,20 @@ $(document).ready(function () {
             console.log('Done');
             $('#page-brands').addClass('closenslide');
             $('#page-video-fireworks').removeClass('closenslide');
-            $('#page-inaugration-complete').addClass('clclosenslideose');
+            $('#page-inaugration-complete').addClass('closenslide');
             videoTag.play();
         }
     };
 
     //Second Change
-    let proceedWithInaugration = function() {
+    // let proceedWithInaugration = function(e) {
+    //     console.log('video completed');
+    // };
 
-    };
+    videoTag.addEventListener('ended', (e)=>{
+        console.log('video completed');
+        $('#page-brands').addClass('closenslide');
+        $('#page-video-fireworks').addClass('closenslide');
+        $('#page-inaugration-complete').removeClass('closenslide');
+    }, false);
 });
