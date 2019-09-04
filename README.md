@@ -25,13 +25,14 @@ https://davidwalsh.name/css-slide
 - Integrated Boiler Plate
 - First Screen with all refinement
 - Second Screen Working on Animation
+- Cutting and Making of Video
 - Included bootstrap
 - Included Saas css
 
 ## Features Pending
 - Restrict Orientation
-- Cutting and Making of Video
 - Making provision to go full screen
+- Third Screen
 
 ## Author
 

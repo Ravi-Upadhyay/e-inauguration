@@ -68,6 +68,7 @@ $(document).ready(function () {
             $('#page-brands').addClass('closenslide');
             $('#page-video-fireworks').removeClass('closenslide');
             $('#page-inaugration-complete').addClass('clclosenslideose');
+            videoTag.play();
         }
     };
 
